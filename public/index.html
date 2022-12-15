@@ -1,30 +1,36 @@
-@extends('layouts.app')
+<!doctype html>
+<html lang="zxx">
 
-@section('content')
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="keywords" content>
+    <meta name="description" content>
+    <title>Premat - Product Landing Page</title>
+    <!--favicon-->
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+    <!--bootstrap css-->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <!--owl carousel css-->
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
+    <!--magnific popup css-->
+    <link rel="stylesheet" type="text/css" href="css/magnific-popup.css">
+    <!--icomoon css-->
+    <link rel="stylesheet" type="text/css" href="css/icomoon.css">
+    <!--icofont css-->
+    <link rel="stylesheet" type="text/css" href="css/icofont.min.css">
+    <!--animate css-->
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <!--main css-->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!--responsive css-->
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
 
-    <!--old-->
-    {{-- <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Dashboard') }}</div>
+</head>
 
-                <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
-
-                    {{ __('You are logged in!') }}
-                </div>
-            </div>
-        </div>
-    </div> --}}
-    {{-- <example-component></example-component> --}}
-   
-    <!--new-->   
-        <!--Start Preloader-->
-        <div class="preloader">
+<body>
+    <!--Start Preloader-->
+    <div class="preloader">
         <div class="d-table">
             <div class="d-table-cell align-middle">
                 <div class="spinner">
@@ -69,39 +75,6 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="#" data-scroll-nav="6">Contact</a>
                             </li>
-                            @guest
-                                <li class="nav-item ">
-                                    @if (Route::has('login'))
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
-                                        </li>
-                                    @endif
-        
-                                    @if (Route::has('register'))
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
-                                        </li>
-                                    @endif
-                                </li>
-                            @else
-                                <li class="nav-item dropdown">
-                                    <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                        {{ Auth::user()->name }}
-                                    </a>
-    
-                                    <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item" href="{{ route('logout') }}"
-                                        onclick="event.preventDefault();
-                                                        document.getElementById('logout-form').submit();">
-                                            {{ __('Logout') }}
-                                        </a>
-    
-                                        <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-                                            @csrf
-                                        </form>
-                                    </div>
-                                </li>
-                            @endguest
                         </ul>
                     </div>
                 </div>
@@ -756,6 +729,26 @@
                 </div>
             </div>
         </div>
-    </footer>       
+    </footer>
+    <!--end footer-->
+    <!--jQuery js-->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <!--proper js-->
+    <script src="js/popper.min.js"></script>
+    <!--bootstrap js-->
+    <script src="js/bootstrap.min.js"></script>
+    <!--magnic popup js-->
+    <script src="js/magnific-popup.min.js"></script>
+    <!--owl carousel js-->
+    <script src="js/owl.carousel.min.js"></script>
+    <!--scrollIt js-->
+    <script src="js/scrollIt.min.js"></script>
+    <!--validator js-->
+    <script src="js/validator.min.js"></script>
+    <!--contact js-->
+    <script src="js/contact.js"></script>
+    <!--main js-->
+    <script src="js/custom.js"></script>
+</body>
 
-@endsection
+</html>
